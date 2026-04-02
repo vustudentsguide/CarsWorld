@@ -1403,6 +1403,11 @@ ul {
     display: none;
   }
 
+  .about-image-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1413,6 +1418,14 @@ ul {
 
   .contact-inner {
     grid-template-columns: 1fr;
+  }
+
+  .car-listings,
+  .services,
+  .about,
+  .testimonials,
+  .contact {
+    padding: 80px 0;
   }
 }
 
@@ -1432,7 +1445,31 @@ ul {
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    display: flex;
+    position: static;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease 1s both;
+  }
+
+  .hero-stat {
+    border-left: 1px solid var(--border-accent);
+    padding-left: 16px;
+    min-width: 80px;
+  }
+
+  .hero-stat-number {
+    font-size: 1.5rem;
   }
 
   .about-values {
@@ -1447,6 +1484,12 @@ ul {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
   .back-to-top {
@@ -1469,6 +1512,19 @@ ul {
 
   .filter-divider {
     display: none;
+  }
+
+  .car-footer {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .car-listings,
+  .services,
+  .about,
+  .testimonials,
+  .contact {
+    padding: 72px 0;
   }
 }
 
@@ -1497,11 +1553,23 @@ ul {
     margin-bottom: 36px;
   }
 
+  .hero-stats {
+    gap: 12px;
+  }
+
+  .hero-stat-number {
+    font-size: 1.3rem;
+  }
+
+  .car-body {
+    padding: 16px 18px 20px;
+  }
+
   .car-listings,
   .services,
   .about,
   .testimonials,
   .contact {
-    padding: 72px 0;
+    padding: 60px 0;
   }
 }
