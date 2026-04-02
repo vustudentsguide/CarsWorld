@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CarsWorld — Premium car dealership offering luxury car sales, leasing, maintenance and financing. Browse our exclusive collection of the world's finest vehicles." />
+  <title>CarsWorld | Premium Automotive Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="nav-logo-icon">🏎</span>
+          Cars<span>World</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#listings">Car Listings</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="tel:+15551234567" class="btn btn-outline">📞 Call Us</a>
+          <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <nav class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#listings">Car Listings</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+15551234567" class="btn btn-primary" style="margin-top:12px">📞 Call Us</a>
+  </nav>
+
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          New Arrivals Available — 2025 Models
+        </div>
+        <h1 class="hero-title">
+          Drive the<br>
+          <span class="highlight">Extraordinary</span>
+        </h1>
+        <p class="hero-subtitle">
+          Discover an unrivalled collection of premium and luxury vehicles. From breathtaking sports cars to refined SUVs — your perfect car is waiting.
+        </p>
+        <div class="hero-actions">
+          <a href="#listings" class="btn btn-primary">
+            Explore Cars &nbsp;→
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Book a Test Drive
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number"><span data-target="500" data-suffix="+">0+</span></div>
+          <div class="hero-stat-label">Cars Available</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number"><span data-target="15" data-suffix="+">0+</span></div>
+          <div class="hero-stat-label">Top Brands</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number"><span data-target="12000" data-suffix="+">0+</span></div>
+          <div class="hero-stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-label="Scroll down">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ==================== BRANDS BAR ==================== -->
+  <div class="brands-bar" aria-label="Featured brands">
+    <div class="brands-track">
+      <!-- Duplicated for infinite scroll effect -->
+      <span class="brand-item">BMW</span>
+      <span class="brand-item">Mercedes-Benz</span>
+      <span class="brand-item">Porsche</span>
+      <span class="brand-item">Ferrari</span>
+      <span class="brand-item">Lamborghini</span>
+      <span class="brand-item">Audi</span>
+      <span class="brand-item">Tesla</span>
+      <span class="brand-item">Range Rover</span>
+      <span class="brand-item">Bentley</span>
+      <span class="brand-item">Maserati</span>
+      <span class="brand-item">BMW</span>
+      <span class="brand-item">Mercedes-Benz</span>
+      <span class="brand-item">Porsche</span>
+      <span class="brand-item">Ferrari</span>
+      <span class="brand-item">Lamborghini</span>
+      <span class="brand-item">Audi</span>
+      <span class="brand-item">Tesla</span>
+      <span class="brand-item">Range Rover</span>
+      <span class="brand-item">Bentley</span>
+      <span class="brand-item">Maserati</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== CAR LISTINGS ==================== -->
+  <section class="car-listings" id="listings">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Collection</span>
+        <h2 class="section-title">Featured Vehicles</h2>
+        <p class="section-desc">Browse our curated selection of premium and luxury automobiles, each hand-picked for performance, style, and prestige.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-bar reveal">
+        <div class="filter-group">
+          <label for="brandFilter">Brand</label>
+          <select id="brandFilter" class="filter-select">
+            <option value="">All Brands</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Audi">Audi</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+          </select>
+        </div>
+        <div class="filter-divider"></div>
+        <div class="filter-group">
+          <label for="priceFilter">Price Range</label>
+          <select id="priceFilter" class="filter-select">
+            <option value="">Any Price</option>
+            <option value="0-80000">Under $80,000</option>
+            <option value="80000-120000">$80,000 – $120,000</option>
+            <option value="120000-200000">$120,000 – $200,000</option>
+            <option value="200000-9999999">$200,000+</option>
+          </select>
+        </div>
+        <div class="filter-divider"></div>
+        <div class="filter-group">
+          <label for="fuelFilter">Fuel Type</label>
+          <select id="fuelFilter" class="filter-select">
+            <option value="">All Types</option>
+            <option value="petrol">Petrol</option>
+            <option value="electric">Electric</option>
+            <option value="hybrid">Hybrid</option>
+          </select>
+        </div>
+        <div class="filter-divider"></div>
+        <button id="resetFilters" class="filter-reset">✕ Reset Filters</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="cars-grid" id="carsGrid"></div>
+      <div class="no-results" id="noResults">
+        😔 No cars match your filters. Try adjusting your search.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Premium Services</h2>
+        <p class="section-desc">From purchase to long-term ownership, CarsWorld supports every step of your automotive journey.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🚗</div>
+          <h3 class="service-title">Car Sales</h3>
+          <p class="service-desc">Browse our extensive inventory of new and certified pre-owned vehicles. Our expert advisors match you to your perfect car with no pressure, just passion.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📋</div>
+          <h3 class="service-title">Flexible Leasing</h3>
+          <p class="service-desc">Drive the car you love at a monthly price that suits your lifestyle. Our leasing plans include comprehensive servicing, insurance options, and easy upgrades.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔧</div>
+          <h3 class="service-title">Maintenance & Repair</h3>
+          <p class="service-desc">Our certified technicians keep your vehicle in peak condition using manufacturer-approved parts. From routine servicing to major repairs — we do it all.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">💰</div>
+          <h3 class="service-title">Car Financing</h3>
+          <p class="service-desc">Flexible finance packages tailored to your needs, with competitive rates and fast approvals. Drive away today with a payment plan that works for you.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔄</div>
+          <h3 class="service-title">Trade-In & Upgrade</h3>
+          <p class="service-desc">Get a top-value appraisal on your current vehicle and seamlessly upgrade to your dream car. Fast, fair, and fully transparent valuations.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🛡️</div>
+          <h3 class="service-title">Warranty & Protection</h3>
+          <p class="service-desc">Every vehicle comes with our comprehensive CarsWorld Protection Plan — covering mechanical, electrical, and cosmetic faults for total peace of mind.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-image-wrap reveal-left">
+          <img
+            class="about-image-main"
+            src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80"
+            alt="CarsWorld showroom interior"
+            loading="lazy"
+          />
+          <img
+            class="about-image-secondary"
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=80"
+            alt="Luxury car detail"
+            loading="lazy"
+          />
+          <div class="about-badge">
+            <div class="about-badge-number">20+</div>
+            <div class="about-badge-text">Years of Excellence</div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <div class="section-header">
+            <span class="section-label">About CarsWorld</span>
+            <h2 class="section-title">A Legacy Built on Passion &amp; Trust</h2>
+          </div>
+          <p class="about-desc">
+            Founded in 2004, CarsWorld has grown from a small family dealership into one of the region's most respected premium automotive destinations. Our story is one of unwavering dedication to quality, integrity, and the sheer joy of driving.
+          </p>
+          <p class="about-desc">
+            We believe buying a car should be as exhilarating as driving one. That's why every member of our team is not just a professional — they're a car enthusiast, committed to finding you the vehicle that truly moves you.
+          </p>
+
+          <div class="about-values">
+            <div class="about-value">
+              <span class="about-value-icon">✅</span>
+              <div>
+                <div class="about-value-title">Certified Quality</div>
+                <div class="about-value-desc">Every car passes a 150-point inspection</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🤝</span>
+              <div>
+                <div class="about-value-title">Trusted Service</div>
+                <div class="about-value-desc">Over 12,000 satisfied customers</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🏆</span>
+              <div>
+                <div class="about-value-title">Award Winning</div>
+                <div class="about-value-desc">#1 Premium Dealer 5 years running</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">⚡</span>
+              <div>
+                <div class="about-value-title">Fast &amp; Easy</div>
+                <div class="about-value-desc">Drive away same day in your new car</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Book a Consultation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-desc">Real experiences from real drivers. See why thousands choose CarsWorld.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Absolutely seamless experience from start to finish. The team found me my dream BMW M4 within days, and the financing was incredibly straightforward. I couldn't be happier."</p>
+          <div class="testimonial-author">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Carter" loading="lazy" />
+            <div>
+              <div class="testimonial-name">James Carter</div>
+              <div class="testimonial-role">BMW M4 Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I've bought three cars from CarsWorld over the years and every time the service is impeccable. Their knowledge, transparency, and after-sales support are second to none."</p>
+          <div class="testimonial-author">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Sarah Williams" loading="lazy" />
+            <div>
+              <div class="testimonial-name">Sarah Williams</div>
+              <div class="testimonial-role">Range Rover &amp; Porsche Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Traded in my old car and drove away in a Tesla Model S the same afternoon. The process was fast, the valuation was fair, and the team made it genuinely enjoyable."</p>
+          <div class="testimonial-author">
+            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Michael Chen" loading="lazy" />
+            <div>
+              <div class="testimonial-name">Michael Chen</div>
+              <div class="testimonial-role">Tesla Model S Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <p class="section-desc">Whether you have a question, want to book a test drive, or need advice — our team is here to help.</p>
+      </div>
+
+      <div class="contact-inner">
+        <div class="contact-info reveal-left">
+          <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:8px">Visit Our Showroom</h3>
+          <p style="color:var(--text-secondary);font-size:0.95rem">Come in and experience our vehicles in person. Our team is on hand every day to help.</p>
+
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">Address</div>
+                <div class="contact-info-value">1200 Luxury Drive, Beverly Hills,<br>Los Angeles, CA 90210</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">
+                  <a href="tel:+15551234567" style="color:var(--accent)">+1 (555) 123-4567</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">
+                  <a href="mailto:info@carsworld.com" style="color:var(--accent)">info@carsworld.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label">Opening Hours</div>
+                <div class="contact-info-value">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 5:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <h3 class="contact-form-title">Send Us a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject *</label>
+              <select class="form-input form-select" id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="sales">Car Purchase Enquiry</option>
+                <option value="testdrive">Book a Test Drive</option>
+                <option value="leasing">Leasing Information</option>
+                <option value="maintenance">Maintenance Booking</option>
+                <option value="finance">Finance Options</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what you're looking for or how we can help…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Thank you! Your message has been received. We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="nav-logo-icon">🏎</span>
+            Cars<span>World</span>
+          </a>
+          <p class="footer-tagline">Your premier destination for luxury and performance automobiles. Driven by passion, trusted by thousands.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="Instagram">in</a>
+            <a href="#" class="social-btn" aria-label="Twitter/X">𝕏</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#listings">Car Listings</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Car Sales</a></li>
+            <li><a href="#services">Vehicle Leasing</a></li>
+            <li><a href="#services">Maintenance</a></li>
+            <li><a href="#services">Car Financing</a></li>
+            <li><a href="#services">Trade-In</a></li>
+            <li><a href="#services">Warranty Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><a href="mailto:info@carsworld.com">info@carsworld.com</a></li>
+            <li><a href="#">1200 Luxury Drive</a></li>
+            <li><a href="#">Beverly Hills, CA 90210</a></li>
+            <li style="color:var(--text-muted);font-size:0.88rem;padding-top:4px">Mon–Sat: 9AM – 7PM</li>
+            <li style="color:var(--text-muted);font-size:0.88rem">Sun: 10AM – 5PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 <span>CarsWorld</span>. All rights reserved. Made with ❤️ for car lovers.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
